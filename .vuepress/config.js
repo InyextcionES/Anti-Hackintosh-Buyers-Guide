@@ -92,7 +92,7 @@ module.exports = {
             */
         ],
         sidebar: [{
-            title: 'Introduction',
+            title: 'Introducción',
             collapsable: false,
             sidebarDepth: 1,
             children: [
