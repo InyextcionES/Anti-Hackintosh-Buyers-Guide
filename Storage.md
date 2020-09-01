@@ -1,24 +1,24 @@
-# Storage
+# Almacenamiento
 
-Storage is a section that can be quite confusing as there a lot of mixed reports regarding PCIe/NVMe based devices, many of these reports are based off old information from back when PCIe/NVMe drives were not natively supported like block size mattering or require kexts/.efi drivers. Well, High Sierra brought native support for these types of drives but certain ones still do not work and can cause instability if not removed/blocked out at an ACPI level. 
+Almanacenamiento es una sección que puede ser bastante complicada dado que hay consejos mixtos sobre los discos PCIe/NVMe. La mayoríá de estos consejos son basados en información antigua desde el tiempo en el que los discos PCIe/NVMe no fueron compatibles natively como el block size mattering o requieren kexts/drivers .efi. Pues, High Sierra introdució compatibilidad nativo para estos tipos de discos, pero ciertos discos todavía no funcionan y pueden causar inestabilidad si no son eliminados/bloqueados al nivel ACPI. 
 
-The other big issue surrounds all Samsung NVMe drives, specifically that they're known to slow down macOS, not play well with TRIM and even create instability at times. This is due to the Pheonix controller found on Samsung drives that macOS isn't too fond of, much preferring the Phison controller found in Sabrent Rocket drives and Western Digital's in-house controllers(WD SN750). The easiest way to see this is with boot up, most systems running Samsung drives will have extra long boot times and have their drives run hotter due to the software TRIM failing(hardware TRIM still should be enabled but no partiality). Also some older Intel drives and Kingston NVMe drives also experience these issues.
+El otro gran problema se trata de todos los discos NVMe de Samsung, específicamente que son conocidos por to slow down macOS, no funcionan bien con TRIM y también pueden causar inestabilidad. Esto es porque el controlador Pheonix encontrado en discos Samsung no le gusta a macOS, que prefiere el contralador Phison encontrado en discos de Sabrent Rocket y los contraldores de Western Digital(WD SN750). La manera más fácil de ver esto es durante el arranque, la mayoría de sistemas usando discos de Samsung tienen extra long boot times y have their drives run hotter due to the software TRIM failing(hardware TRIM still should be enabled but no partiality). Además unos discos NVMe de Intel y Kingston tienen estos problemas.
 
-And while not an issue anymore, do note that all of Apple's PCIe drives are 4k sector-based so for best support only choose drives with such sectors.
+Y aunque ya no es un gran problema, ten en cuenta que todos los discos PCIe de Apple son basado en sectores 4k, así que recomendamos discos con estos sectores para mejor compatibilidad.
 
-**Note for laptop users**: Intel SSDs don't always play nicely with laptops and can cause issues, avoid when possible
+**Nota para laptops**: SSDs de Intel (normalmente) no funcionan bien con laptops y pueden causar problemas, evítalos si es posible
 
-**SSD/Storage Options that are NOT supported:**
+**SSD/Almacenamiento que NO es compatible:**
 
-* Any eMMC based storage (commonly found in netbooks, some tablets and low end computer models.)
-* Samsung PM981 and PM991(commonly found in OEM systems like laptops)
-   * Even if PM981 has been fixed with [NVMeFix](https://github.com/acidanthera/NVMeFix/releases) ver. 1.0.2 there is still plenty of kernel panics issues
+* Cualquier disco basado en eMMC (normalmente encontrado en netbooks, ciertas tablets y low end computer models.)
+* Samsung PM981 y PM991(normalmente encontrado en sistemas OEM como laptops)
+   * Aunque PM981 ha sido arreglado con la ver. 1.0.2 de [NVMeFix](https://github.com/acidanthera/NVMeFix/releases) todavía hay muchos problemas como kernel panics
 * Micron 2200S
-   * Many users have report boot issues with this drive
+   * Muchos usarios tienen problemas con el arranque usando este disco
 
-**SSDs to avoid**
+**SSDs que evitar**
 
 Samsung:
-* Samsung 970 Evo Plus (While not natively supported out of the box, a [firmware update from Samsung](https://www.samsung.com/semiconductor/minisite/ssd/download/tools/) will allow these drives to operate in macOS)
+* Samsung 970 Evo Plus (Aunque no es compatible natively out of the box, una [actualización del firmware de Samsung](https://www.samsung.com/semiconductor/minisite/ssd/download/tools/) permite el uso de estos discos en macOS)
 
-For all NVme SSDs, its recommended to use [NVMeFix.kext](https://github.com/acidanthera/NVMeFix) to fix power and energy consumption on these drives
+Para todos los SSDs NVMe, se recomeienda usar [NVMeFix.kext](https://github.com/acidanthera/NVMeFix) para arreglar el uso de energía en estos discos

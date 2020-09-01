@@ -1,39 +1,39 @@
 # GPUs
 
-~~Get an RTX GPU, I want to see people suffer as they slowly realize that they don't even have support in HighSierra. Let the Nvidia fans die a slow and painful death, let this be a reminder to never cross our lord and saviour Tim Apple~~
-If you don't want a headache, stay away from all Nvidia GPUs that aren't Kepler based. Currently(and likely forever), Turing and Volta GPUs have no support whatsoever in any version of macOS while Pascal and Maxwell have their support stopping in High Sierra while also requiring WebDrivers so they're not native GPUs(this is important because that means another point of failure)
+~~Compra una GPU RTX, Queremos ver la gente sufriendo cuando se den cuenta de que estas GPUs no son compatible con ni High Sierra. Quermos ver los fans de Nvidia muriendo lentamente y con mucho dolor, esto será una adertencia de nunca luchar contra nuestro sennor y salvador Tim Apple~~
+Si no quieres esta pena, evita todas las GPUs de Nvidia que no son basadas en Kepler. Actualmente(y probablemente para siempre), GPUs Turing y Volta no tienen niguna compatiblidad con ninguna versión de macOS, mientras Pascal y Maxwell tienen compatibilidad que terminó en High Sierra y también requieren WebDrivers así que no son GPUs nativas(esto es importante porque es otro another point of failure)
 
->  B-b-but are the drivers out yet?
+>  ¿P-p-pero han lanzado los drivers?
 
 ![WebDrivers](WebDrivers.gif)
 
-For GPUs we recommend, check out the [GPU Buyers Guide](https://dortania.github.io/GPU-Buyers-Guide/)
-And for those who are running unsupported GPUs, there's still hope for you! With my patent pending [**How to disable your unsupported GPU for macOS Guide**](https://khronokernel-4.gitbook.io/disable-unsupported-gpus/), even a simpleton like you can experience the glories of Mojave and beyond!
+Para GPUs, recomendamos que leas la [GPU Buyers Guide](https://inyextciones.github.io/GPU-Buyers-Guide/)
+Y para ellos que tienen GPUs incompatibles, there's still hope for you! Usando la guía [**How to disable your unsupported GPU for macOS Guide**](https://khronokernel-4.gitbook.io/disable-unsupported-gpus/) (patente solicitada) de Khronokernel, a simpleton como tú también puede experience the glories of Mojave and beyond!
 
-> Are there any GPU board partners I should avoid when buying a GPU? 
+> ¿Hay alguna marca que evitar cuando compro una GPU para mi hack? 
 
-Why I'm glad you asked, most manufactures actually have a pretty good track record with Hackintoshes but there's 2 specific brands to avoid. While it is possible to install with these GPUs, there still is a high possibility of issues arising like instability and black screens:
-* XFX(may work with CSM/legacy mode turned off, make sure it's in UEFI mode)
+Why I'm glad you asked, most manufactures actually have a pretty good track record with Hackintoshes pero hay 2 marcas que evitar. Aunque sea posible instalar macOS con estas GPUs, todavía hay alta posibilidad de problemas como inestabilidad y pantallas negras:
+* XFX(talvez funcionen con el modo CSM/legacy desactivado, asegúrate que usas el modo UEFI)
 * Powercolor
-* MSI(Navi specifically, Vega and Polaris are fine)
+* MSI(específicamente las GPUs Navi, GPUs Vega y Polaris funcionan bien)
 
-Note: AMD Navi support is still quite finicky, with WhateverGreen not being updated yet
+Nota: Compatibilidad con AMD Navi todavía es bastante incierto, dado que WhateverGreen ya no fue actualizada
 
-::: tip Recommendations
+::: tip Recomendaciones
 
-So our overall recommendation for GPUs:
+Nuestras recomendaciones para GPUs:
 
-* Newer AMD GPUs: 
-  * Polaris 10 and 20(RX 4XX, 5XX)
-  * Vega 10 and 20(RX Vega 56, 64 and VII)
+* GPUs recientes de AMD: 
+  * Polaris 10 y 20(RX 4XX, 5XX)
+  * Vega 10 y 20(RX Vega 56, 64 y VII)
   * Navi 10(RX 5XXX)
-* Overall brand recommendations:
+* Marcas sugeridas:
   * Sapphire
   * Asus
   * Gigabyte
 :::
 
-**GPUs that aren't supported AT ALL**
+**GPUs que no son compatibles con NINGUNA VERSIÓN DE macOS**
 
 Turing
 
@@ -66,12 +66,12 @@ Lexa
 * RX 540/X
 * RX 550/X
 
-**GPUs to avoid**
+**GPUs que evitar**
 
 Pascal
 
-* GTX Titan X(GP 102-400 Pascal core)
-* GTX Titan Xp(GP 102-450 Pascal core)
+* GTX Titan X(GP 102-400 núcleo Pascal)
+* GTX Titan Xp(GP 102-450 núcleo Pascal)
 * GTX 1080/Ti
 * GTX 1070/Ti
 * GTX 1060
@@ -90,7 +90,7 @@ Pascal
 
 Maxwell
 
-* GTX Titan X(GM 200 Maxwell core)
+* GTX Titan X(GM 200 núcleo Maxwell)
 * GTX 980/ti
 * GTX 970
 * GTX 960

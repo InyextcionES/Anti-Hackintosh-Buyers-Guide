@@ -1,4 +1,4 @@
-# Power Supply
+# Fuente de Alimentación
 
-~~If it has RGB in it, I will personally come to your house and force a Unibeast installer down your throat~~ 
-Just don't cheap out on your PSU but be reasonable with what you buy, RGB ain't a good purchasing decision
+~~Si contiene RGB, [Khronokernel](https://github.com/khronokernel) personalmente irá a tu casa y te alimentará un instalador Unibeast a la fuerza por la garganta~~ 
+Just don't cheap out on your PSU pero sé reasonable con lo que compras, RGB no es una buena elección
