@@ -1,3 +1,3 @@
 # Case
 
-If your shoe fits in it, your hack will likely boot in it
+Si puedes colocar tus zapatos en la case, es probable que tu hack va a funcionar en la case también

@@ -1,3 +1,3 @@
-# Thermal Paste
+# Pasta Térmica
 
-Don't use tooth paste, that's all I got to say. Nutella is the way to go #NUTELLAMASTERRACE
+No uses la pasta de dientes, es todo lo que tengo que decir. Nutella es lo que usar #NUTELLAMASTERRACE

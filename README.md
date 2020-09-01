@@ -1,27 +1,27 @@
 # Anti-Hackintosh-Buyers-Guide
 
 * [CPU](CPU.md)
-   * CPUs to avoid
+   * CPUs que evitar
 * [GPU](GPU.md)
-   * GPUs that aren't supported AT ALL
-   * GPUs to avoid
+   * GPUs que no son compatibles con NINGUNA VERSIÓN DE macOS
+   * GPUs que evitar
 * [Motherboard](Motherboard.md)
-   * Chipsets to avoid
-   * Brands to avoid
-* [Storage](Storage.md)
-   * SSDs that aren't supported AT ALL
-   * SSDs to avoid
+   * Chipsets que evitar
+   * Marcas que evitar
+* [Almacenamiento](Storage.md)
+   * SSDs que no son compatibles con NINGUNA VERSIÓN DE macOS
+   * SSDs que evitar
 * [RAM](RAM.md)
-* [Cooler](Cooler.md)
+* [Refrigeración](Cooler.md)
 * [Networking](Networking.md)
-   * NICs cards to avoid
+   * Tarjetas NIC que evitar
 * [Wireless](Wireless.md)
-   * Wireless cards that aren't supported AT ALL
-   * Wireless cards to avoid
-* [Power Supply](PSU.md)
+   * Tarjetas wireless que no son compatibles con NIGUNA VERSIÓN DE macOS
+   * Tarjetas wireless que evitar
+* [Fuente de Alimenación](PSU.md)
 * [Case](Case.md)
-* [Thermal Paste](ThermalPaste.md)
+* [Pasta Térmica](ThermalPaste.md)
 
-# An introduction
+# Una introducción
 
-So what is the Anti-Hackintosh Buyers Guide and why should you care about this post? Well, this is a guide of what not to buy when building a Hackintosh and will be kept up-to-date as new hardware comes out. While this guide won't give exact recommendations, it'll try and point you in the right direction.
+¿Qué es la Anti-Hackintosh Buyers Guide y por qué deberías leer esta guía? Pues, esta es una guía de qué no comprar cuando montas un Hackintosh y será actualizada cuando hardware nuevo sea lanzado. Aunque esta guía no da recomendaciones exactas, intentará a try and point you a la right direction.

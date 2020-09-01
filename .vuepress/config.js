@@ -101,21 +101,21 @@ module.exports = {
 
         },
         {
-            title: 'What to avoid',
+            title: '¿Qué evitar?',
             collapsable: false,
             sidebarDepth: 2,
             children: [
                 'CPU',
                 'GPU',
 				'Motherboard',
-				'Storage',
+				'Almacenamiento',
 				'RAM',
-				'Cooler',
+				'Refrigeración',
 				'Networking',
 				'Wireless',
-				'PSU',
+				'Fuente de Alimentación',
 				'Case',
-				'ThermalPaste',
+				'Pasta Térmica',
             ]
         },
     ],

@@ -1,15 +1,15 @@
 # Wireless
 
-For wireless, keep in mind that macOS has a very limited selection for native Wifi and Bluetooth cards but Midi has a great list on supported models that you can find in the [r/Hackintosh FAQ](https://www.reddit.com/r/hackintosh/wiki/faq#wiki_wifi_compatibility). But for those who are either motherboard shopping or just looking for dedicated wireless will need to keep in mind that the following wireless cards are not supported:
+Para wireless, ten en cuenta que macOS solamente es compatible con una selceccion muy limitida de tarjetas Wifi y Bluetooth nativas, pero Midi tiene una lista re útil de tarjetas compatibles que está en la [r/Hackintosh FAQ](https://www.reddit.com/r/hackintosh/wiki/faq#wiki_wifi_compatibility). Pero para ellos que buscan una motherboard o tarjeta wireless dedicada tienen que tener en cuenta que estas siguientes tarjetas wireless no son compatibles:
 
-**Wireless cards that aren't supported AT ALL**
+**Tarjetas wireless que NO SON COMPATIBLES**
 
-* Any Intel based wireless(Bluetooth sometimes works but it's inconsistent and seems to be on a per system basis)
-* Any Killer based wireless
+* Cualquier wireless de Intel(a veces Bluetooth funciona pero es irregular y nos parece que no funciona para cada sistema)
+* Cualquier wireless de Killer
 
-**Wireless cards to avoid**
+**Tarjetas wireless que evitar**
 
-* Any USB based(Ralink and Realtek) as these generally aren't as reliable and some macOS functions like Hand-Off and AppleWatch Unlock may not function correctly
+* Cualquier basada en USB(Ralink y Realtek) ya que estas generalmente no son tan fiables y porque ciertas operaciones de macOS como Hand-Off y AppleWatch Unlock no van a funcionar correctamente
 
 
-And for those who want a list of supported models can check out the [Wireless Buyers Guide](https://dortania.github.io/Wireless-Buyers-Guide/)
+Y para una lista de tarjetas compatibles, dirígete a la [Wireless Buyers Guide](https://inyextciones.github.io/Wireless-Buyers-Guide/)

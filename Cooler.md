@@ -1,14 +1,14 @@
-# Coolers
+# Refrigeración
 
-The most popular liquid coolers are all-in-one (AIO). They are closed loop kits that come pre-assembled. If you're uncertain which AIO kit you should purchase, the YouTube channel GamersNexus provides extremely thorough reviews. The kits connect to your motherboard via the internal USB 2.0 header. When creating a USB map you need to consider this or you will not be able to control it. 
+Los sitemas de refrigeración líquida más populares son all-in-one (AIO). Son kits closed-loop que vienen pre-assembled. Si no estás seguro de cuál kit AIO deberías comprar, el canal YouTube GamersNexus provides extremely thorough reviews. Los kits conectan a tu motherboard via el header USB 2.0 internal. Cuando creas una USB map tienes que considerar esto o no podrás controlarlo. 
 
-Excluding others and first generation AIO kits from Asetek, they have will have either volatile or persistent memory:
+Sin incluir otros y kits AIO de la 1a generación de Asetek, tienen memoria volátil o memoria persistente:
 
-1. NZXT and Corsair have volatile memory that persists as long as the PSU is left powered on (I).
-2. EVGA kits have persistent memory. Changing settings with the software in Windows allows you to write to memory. If the PSU is powered off (O), settings are not lost.
+1. NZXT y Corsair tienen memoria volátil que that persiste mientras que el PSU está conectado al poder (I).
+2. Kits EVGA tienen memoria persistente. Cambiar ajustes con el software en Windows escribe a esta memoria. Si el PSU está apagado (O), no pierdes tus ajustes.
 
-Almost all use the same internal hardware provided by Asetek. It is impossible to control them with the motherboard. They are not designed this way. The three pin connector for the CPU header is only there to report the Pump and Radiator fan speeds. It is a one-way communication. The only way to control these variables is through the USB header with software. Other AIO kits that are not based on Asetek have the ability to be controlled via the motherboard via the 4 pin CPU header. Thermaltake and Deep Cool are some examples.
+Casi todos usan el mismo hardware internal de Asetek. Es imposible controlarlos usando la motherboard. No son designed así. El three pin connector for the CPU header is only there para report las velocidades de los fans del Pump y Radiador. It is a one-way communication. La única manera de controlar estas variables es por el USB header usando software. Se pueden controlar otros kits AIO que no son basados en Asetek via la motherboard via el 4 pin CPU header. Thermaltake y Deep Cool funcionan así.
 
-There are Python based utilities for controlling your kit on GitHub, though this is usually unnecessary, as setting it up once in Windows will be enough until you turn off the PSU. Python based [liquidctl](https://github.com/jonasmalacofilho/liquidctl) is developed for macOS and works for a few models from NZXT, EVGA, and Corsair.
+Hay utilidades basadas en Python para controlar tu kit en GitHub, pero normalmente no es necesario, ya que configurarlos en Windows will be enough hasta que apagues el PSU. [liquidctl](https://github.com/jonasmalacofilho/liquidctl) (basado en Python) es desarollado para macOS y funciona con unos modelos de NZXT, EVGA, y Corsair.
 
-There are no real compatibility issues with AIO kits and macOS. They will work regardless of booted OS as long as they are initially setup with Windows.
+No hay tantas problemas de compatibilidad con kits AIO kits y macOS. Siguen funcionando regardless of del SO actual mientras que ya los han configurado en Windows.
