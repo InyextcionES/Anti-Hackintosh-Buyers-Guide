@@ -2,13 +2,13 @@
 
 ::: warning
 
-~~Currently the only motherboard not supported **at all** is the B550 boards from AMD, they require a KVM to operate.~~
+~~Actualmente el único motherboard que no tiene **niguna compatibilidad** son las placas B550 de AMD, requieren una KVM para funcionar.~~
 
-Recent developments have resolved this issue with SSDT-CPUR, see [OpenCore Install Guide for more info](https://dortania.github.io/OpenCore-Install-Guide/)
+Recent developments have resolved this issue with SSDT-CPUR, dirígete a la [OpenCore Install Guide para más información](https://inyextciones.github.io/OpenCore-Install-Guide/)
 
 :::
 
-So with motherboards, the main thing to keep in mind is what controllers your system is running, specifically:
+So with motherboards, the main thing to keep in mind is what controllers your system is running, específicamente:
 
 * Audio Interface Controller
 * Networking Interface Controller (Ethernet)
@@ -42,11 +42,11 @@ The main brands to avoid with **Intel** are:
   * USB issues on B460, H470 and Z490 
   * Z390 and older are fine
  
-::: tip Recommendations
+::: tip Recomendaciones
 
 So our overall recommendation for brands(Intel):
 
-* Z370 and older: 
+* Z370 y anterior: 
   * Gigabyte 
   * Asus
   * MSI
@@ -60,7 +60,7 @@ So our overall recommendation for brands(Intel):
 
 :::
 
-And main platform to avoid (for stability and ease of setup):
+And main platform to avoid (para estabilidad y ease of setup):
 
 * X79
 * X99
@@ -77,7 +77,7 @@ And main platform to avoid (for stability and ease of setup):
 * H470
 * Z490
 
-Note (*): Only get these in case you need features from these that aren't found in Z370 or you want to overclock a 9th Gen CPU. Most of the issues with these have been corrected but they're still a big mess, see below.
+Nota (*): Only get these in case you need features from these that aren't found in Z370 or you want to overclock a 9th Gen CPU. Most of the issues with these have been corrected but they're still a big mess, see below.
 
 ---
 
@@ -85,7 +85,7 @@ Note (*): Only get these in case you need features from these that aren't found 
 
 With audio, most boards are supported and you can find a more extensive list from [AppleALC](https://github.com/acidanthera/AppleALC/wiki/Supported-codecs) for audio. VoodooHDA is another option for legacy users
 
-**note**: AMD motherboard users will require VoodooHDA if you plan to use the onboard microphone header. Regulkar audio putput works however with AppleALC
+**nota**: AMD motherboard users requieren VoodooHDA if you plan to use the onboard microphone header. Regulkar audio putput works however with AppleALC
 
 ---
 
@@ -121,7 +121,7 @@ For USB, things are *fairly* simple, most Ryzen/Matisse, Intel and AsMedia contr
 
 **Special AMD Note**: Due to how macOS builds USBs, they **must** be defined somewhere in the ACPI tables. For some reason, many AMD boards just forget to do this and users end up with a lot of broken USB ports. There is a fix but it involves manually adding the ports to the [DSDT or SSDT](https://dortania.github.io/USB-Map-Guide/).
 
-**Special Asus 400 series note**: Thanks to Asus breaking the ACPI spec, you'll need to use [SSDT-RHUB](https://dortania.github.io/Getting-Started-With-ACPI/) to reset your ports.
+**Special Asus 400 series note**: Thanks to Asus breaking the ACPI spec, you'll need to use [SSDT-RHUB](https://dortania.github.io/Getting-Started-With-ACPI/) para resetear tus puertos.
 
 ---
 

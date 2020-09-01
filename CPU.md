@@ -1,6 +1,6 @@
 # CPUs
 
-## CPUs to avoid:
+## CPUs que evitar:
 
 While AMD CPUs can work but we advise against them due to numerous issues still plaguing them as they're not natively supported. They require quite a bit more work to get setup but for those who like would prefer AMD there is the [AMD Vanilla Guide](https://vanilla.amd-osx.com). 
 
@@ -29,17 +29,17 @@ Common issues with AMD:
 * **3rd Gen Threadripper is not supported on bare-metal**
   * KVM solution is the only work-around at this moment 
 
-AMD CPUs:
-* AMD Ryzen 1000 Series
-* AMD Ryzen 2000 Series
-* AMD Ryzen 3000 Series
+CPUs de AMD:
+* AMD Ryzen 1000
+* AMD Ryzen 2000
+* AMD Ryzen 3000
 * AMD Athlon
 * AMD ThreadRipper
 * AMD FX Series
 
-With Intel, the thanks to most of the CPUs being quite similar they have support when the CPU is spoofed to a supported model. The only downside is that the iGPU rarely work on Atom/Pentium/Celeron these models meaning a cheap iGPU Hackintosh is impossible with these CPUs. Regarding X99/LGA 2011-V3 CPUs, there's the issue that these CPUs were never shipped in a real Mac so quite a few issues are present when running macOS on these systems. Avoid if possible
+With Intel, the thanks to most of the CPUs being quite similar they have support when the CPU is spoofed to a supported model. The only downside is that the iGPU rarely work on Atom/Pentium/Celeron these models meaning a cheap iGPU Hackintosh es imposible con estos CPUs. Regarding X99/LGA 2011-V3 CPUs, there's the issue that these CPUs were never shipped in a real Mac so quite a few issues are present when running macOS on these systems. Evita estos si es posible
 
-**Dual Socket User Note**: Do note that the macOS kernel only supports a maximum of 64 threads. So for baller setups please be aware. And for dual socket users, you will need to use [AppleMCEReporterDisabler](https://github.com/acidanthera/bugtracker/files/3703498/AppleMCEReporterDisabler.kext.zip) in macOS Catalina
+**Nota para Usarios Dual Socket**: Ten en cuenta que el kernel de macOS solamente soprta 64 hilos. So for baller setups please be aware. And for dual socket users, tienes que usar [AppleMCEReporterDisabler](https://github.com/acidanthera/bugtracker/files/3703498/AppleMCEReporterDisabler.kext.zip) en macOS Catalina
 
 * Intel Atoms
 * Intel Celerons
@@ -48,7 +48,7 @@ With Intel, the thanks to most of the CPUs being quite similar they have support
 * Intel X99/LGA 2011-V3
 * Intel X299/LGA-2066
 
-::: tip Recommendations
+::: tip Recomendaciones
 
 So our overall recommendation for CPUs:
 
@@ -56,29 +56,29 @@ So our overall recommendation for CPUs:
   * Ivy Bridge through Comet Lake are properly supported in macOS
 :::
 
-## Unsupported CPUs
+## CPUs Incompatibles
 
 So with outright unsupported CPUs, you're split into 2 camps: Either too old to run or too new that patches aren't supported
 
-**Too old to run**:
+**Demasiado antiguos**:
 
 This mainly consists of CPUs that are missing the SSE4.2 instruction set required for Mojave and newer, you can get around this by replacing the telemetry plugin but not ideal. See [trashOS repo](https://github.com/khronokernel/trashOS) for more info
 
-* Wolfdale (Intel Core2 Duo series)
+* Wolfdale (serie Core2 Duo de Intel)
    * E7xxx
    * E8xxx
-* Yorkfeild (Intel Core2 Quad series)
+* Yorkfeild (serie Core2 Quad de Intel)
    * E8xxx
    * E9xxx
 
 Then there's the CPUs that are missing the SSE4.1 and older instruction sets, with these support is stuck an OS X 10.11 El Capitan
 
 
-**Too new to run**
+**Demasiado nuevos**
 
 Well with this, the only current solution is to run it in a KVM, this is due to the current kernel patches not supporting 19h
 
-* 3rd Gen Threadripper
+* Threadripper de la 3a Generación
    * 3960X
    * 3970X
-   * 3990X(the macOS kernel doesn't even support more than 64 threads)
+   * 3990X(el kernel de macOS kernel no es compatible con más de 64 hilos)
