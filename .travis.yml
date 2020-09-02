@@ -2,12 +2,12 @@ language: node_js
 node_js: lts/*
 cache:
   npm: false
-before_script:
+before_script: 
 script:
 - yarn install
 - yarn build
 deploy:
-  local_dir: .vuepress/dist/
+  local_dir: ".vuepress/dist/"
   provider: pages
   skip_cleanup: true
   name: Travis Build Bot
@@ -15,7 +15,5 @@ deploy:
   on:
     branch: master
   target_branch: gh-pages
-  # committer_from_gh: true
-  # allow_empty_commit: true
   github_token:
-    secure: huaXIb+EhuAbwdZZuEGjJ7UqP/o7/kf9gf3YGfao4cxeTr29oNFaSDwvQVh2YbOW5wLcberSyNxad+iP6u6U5ZHYMDR15DravIDd32ZrSWc+6Ws4b2VG026ZhsZgY4Vhgbg48T96rywi+7cTasWTICRburvz7r8UOf8EwU+TKtSBCPTziKhakBIRAeFExp2qcLajtFzl/2qhL1hfL20stF7Lc8IWERoTwnVLT6BgqTrqf04I71N+hEMfFZYtZ1YkbZJeKUi4fJsF1T5Vb6l6ta73ixk6hIhOWJfi4bNB4kS+6lnUVDvrK9E+jSu+iE5nlId9wHxOPlsslmDmTNJrwlY6CxeE6Oa2kOSImPxO25UJ6GPqWBxzn+uYde01uFNuYIK1ebbDwZftiaJlkMTsPsM+AKdPffF/Uo6MeCrBQa/rV7vdnimgKRGcK6OCRPNcb44gNPXeY/o7B9F9a5bZOiiytZDTQ5XJ0ohqeOc+VFtbZ7khj9qvfhVPX/a2JIYk2BiWXluXq2xlvEPNyxGrsT5yR78LYA9v8jiGRTl0kynPj/V/g4kFhLc3JPhs8TxVVgIXCM8H0KdVu2ijHBOUHrT6OwLiCfNHXlquuJVVLsj+e+8Hlbbq/44LvLa9L92QLufZWnBVtBtV9tV+wsi93JZQsxskqv2W5n064CcGA8k=
+    secure: OZyZPP99jV9Vp4MlFCDBhteKi1TJDtNqwf2j8uaBkJfKiLlN27QH7PgW1jscarYvZ4OcRP1SVziwHxQr4Uyld+lQucM9kq24TwjHcUJjXxGNTGGQ+u7ggaTtlrONKU0BrmnZRgdJoncR2+OH7p/zyLD1G6bfIS+8ue67Py1lUGRKH21nrEUUlekYHPXLZMwSehOiFHnXbH47aDnEYO0BUMUCRsodp7fcr46n6uxX+huX5M4vfL1LFPmcNoyXV97wCaQDhnaJRXGg3fE8F91Bd9mT2ZTBxjPwEyGLOnzTtzoTMXS+Gl3SlCZhIsSWDVXmHOaA815s7T+InDzeP+6lblrZTg9JyhR9r+M7uHNxWm2rX6iHit0P+r8KslK3teLV9k1ByoD6YEj7z/jqsqz+JxTzo991QuhNWwsikkMrnFBkKw3xgccHeOOCOCPaEQuZOodbygnAVK64wJOM69o6DWjLWZUyuUyi9ym4hOxQyfGgQW76U9dgHsmvP1ZEfmlglNIljzlHS9L8Q0IQdBmk4gZDqrC0xRsVqORJjYMsD19o+Zi97XDLUtgh8+t9odU1oOh4QZYPpGom8ssIacKS9+sa+0PN1E2k2yz/wHbzrL1n3QU645sGmPuijjRd7dkjB7ahIdJQIJbZy7BlAqWtJQImq3ylYTUJGG6wPOoJOGM=
