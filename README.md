@@ -1,5 +1,8 @@
 # Guía de compradores Anti-Hackintosh
 
+**Nota antes de comenzar**: Esta es una traducción no oficial de la [Guía de compradores de Dortania](https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/) que **no** está afiliada con [Dortania](https://github.com/dortania), y puede quedar obsoleta fácilmente. 
+
+
 * [CPU](CPU.md)
    * CPUs que evitar
 * [GPU](GPU.md)
