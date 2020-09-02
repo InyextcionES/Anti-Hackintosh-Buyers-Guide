@@ -1,23 +1,23 @@
 # GPUs
 
-~~Compra una GPU RTX, Queremos ver la gente sufriendo cuando se den cuenta de que estas GPUs no son compatible con ni High Sierra. Quermos ver los fans de Nvidia muriendo lentamente y con mucho dolor, esto será una adertencia de nunca luchar contra nuestro sennor y salvador Tim Apple~~
-Si no quieres esta pena, evita todas las GPUs de Nvidia que no son basadas en Kepler. Actualmente(y probablemente para siempre), GPUs Turing y Volta no tienen niguna compatiblidad con ninguna versión de macOS, mientras Pascal y Maxwell tienen compatibilidad que terminó en High Sierra y también requieren WebDrivers así que no son GPUs nativas(esto es importante porque es otro another point of failure)
+~~Compra una GPU RTX, queremos ver la gente sufriendo cuando se den cuenta de que estas GPUs ni siquiera son compatibles con High Sierra. Quermos ver los fans de Nvidia muriendo lentamente y con mucho dolor, esto será una adertencia de nunca luchar contra nuestro salvador Tim Apple~~
+Si no quieres que te pase esto, evita todas las GPUs de Nvidia que no son basadas en Kepler. Actualmente (y probablemente para siempre), las GPUs Turing y Volta no son compatibles con ninguna versión de macOS, mientras que el soporte de Pascal y Maxwell tienen soporte hasta High Sierra y también requieren de WebDrivers así que no son GPUs nativas (esto es importante porque es otro punto de falla)
 
->  ¿P-p-pero han lanzado los drivers?
+>  ¿P-p-pero se han lanzado los WebDrivers?
 
 ![WebDrivers](WebDrivers.gif)
 
-Para GPUs, recomendamos que leas la [GPU Buyers Guide](https://inyextciones.github.io/GPU-Buyers-Guide/)
-Y para ellos que tienen GPUs incompatibles, there's still hope for you! Usando la guía [**How to disable your unsupported GPU for macOS Guide**](https://khronokernel-4.gitbook.io/disable-unsupported-gpus/) (patente solicitada) de Khronokernel, a simpleton como tú también puede experience the glories of Mojave and beyond!
+Para las GPUs, recomendamos que leas la [Guía de compradores de GPUs](https://inyextciones.github.io/GPU-Buyers-Guide/)
+Y para aquellos que tienen GPUs incompatibles, sigue habiendo esperanzas para tí! Usando la guía de [**Cómo deshabilitar tu GPU para macOS (guía en inglés)**](https://khronokernel-4.gitbook.io/disable-unsupported-gpus/) (patente pendiente) de [Khronokernel](https://github.com/khronokernel), alguien como tú también puede experimentar la gloria de Mojave en adelante!
 
 > ¿Hay alguna marca que evitar cuando compro una GPU para mi hack? 
 
-Why I'm glad you asked, most manufactures actually have a pretty good track record with Hackintoshes pero hay 2 marcas que evitar. Aunque sea posible instalar macOS con estas GPUs, todavía hay alta posibilidad de problemas como inestabilidad y pantallas negras:
-* XFX(talvez funcionen con el modo CSM/legacy desactivado, asegúrate que usas el modo UEFI)
+Bueno, qué suerte que pregunstaste. La mayoría de los fabricantes tienen un buen historial con los Hackintoshes pero hay 2 marcas que deberías evitar. Aunque sea posible instalar macOS con estas GPUs, todavía hay posibilidades de que tengas problemas como inestabilidad y pantallas negras:
+* XFX(tal vez funcionen con el modo CSM/legacy desactivado, asegúrate que usas el modo UEFI)
 * Powercolor
 * MSI(específicamente las GPUs Navi, GPUs Vega y Polaris funcionan bien)
 
-Nota: Compatibilidad con AMD Navi todavía es bastante incierto, dado que WhateverGreen ya no fue actualizada
+Nota: la compatibilidad con AMD Navi sigue siendo bastante delicada, y WhateverGreen aún no se ha actualizado
 
 ::: tip Recomendaciones
 

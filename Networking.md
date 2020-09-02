@@ -1,4 +1,4 @@
-# Networking
+# Ethernet
 
 Esta sección específicamente es para NICs dedicadas, generalmente la mayoríá de networking es compatible natively, como Aquantia, o tiene drivers de Mieze:
 

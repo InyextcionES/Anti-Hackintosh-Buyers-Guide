@@ -2,32 +2,32 @@
 
 ## CPUs que evitar:
 
-While AMD CPUs can work but we advise against them due to numerous issues still plaguing them as they're not natively supported. They require quite a bit more work to get setup but for those who like would prefer AMD there is the [AMD Vanilla Guide](https://vanilla.amd-osx.com). 
+Mientras que las CPUs AMD pueden funcionar, recomendamos que no las uses si puedes utilizar otra cosa, ya que siguen habiendo muchos problemas con ellas ya que no son soportadas nativamente. Requieren de un poco más de trabajo para configurarlas correctamente, pero hay una [Guía Vanilla de AMD (guía en inglés)](https://vanilla.amd-osx.com) para aquellos que prefieren CPUs AMD.
 
-Common issues with AMD:
-* Adobe Products don't always work and there is no fix for lightroom at the moment
-   * some fixes can be found here: [Adobe Fixes](https://adobe.amd-osx.com/)
-   * Do note these fixes just disable functionality, they're not real fixes
-* Cubase, REAPER, and other audio software crashes on launch
-   * REAPER works *if* using the Clang build
-   * There is no fix for Cubase at the moment
-   * Waves plugins also cause crashes
-* Virtual Machine running off of AppleHV's framework will not work(ie: Parallels 15)
-   * VirtualBox works fine as it doesn't use AppleHV
-* Docker broken
-   * Docker toolbox is based off of VirtualBox, many features are unavailable with this
-* Xcode AppleWatch simulator is broken in Catalina
-   * Mojave works fine
-* Microphone input is not available with AppleALC requiring VoodooHDA(quite a bit worse audio quality and overall instability)
-* Audio Drift issues on Ryzen APUs(G series Chips)
-   * USB DAC is only fix besides new CPU
-* Difficult to setup Sleep(or impossible on some systems)
-* No CPU Power Management
-* Not all USB ports work on some boards
-   * This is due to not being assigned in ACPI, you need to manually add them in your DSDT
-* Delayed updates
-* **3rd Gen Threadripper is not supported on bare-metal**
-  * KVM solution is the only work-around at this moment 
+Problemas comunes con AMD:
+* Los productos Adobe no siempre funcionan y no hay arreglos para lightroom por el momento.
+   * Sin embargo, algunos arreglos pueden ser encontrados aquí: [Arreglos de Adobe](https://adobe.amd-osx.com/)
+   * Ten en cuenta que estos "arreglos" sólo deshabilitan ciertas funciones, no son soluciones reales. 
+* Cubase, REAPER, y otros softwares de audio se crashean cuando los abres
+   * REAPER funciona *si* usas el build Clang
+   * No hay una solución para Cubase por el momento
+   * Plugins de Waves también provoca crashes
+* Las máquinas virtuales que se ejecutan fuera del marco de AppleHV no funcionarán (programas como Parallels 15)
+   * VirtualBox funciona bien ya que no usa AppleHV
+* Docker roto
+   * La caja de herramientas de Docker se basa en VirtualBox, muchas funciones no están disponibles con este
+* El simulador de Apple Watch de Xcode está roto en Catalina
+   * Mojave sí funciona
+* La entrada de micrófono no está disponible con AppleALC que requiere VoodooHDA (calidad de audio bastante peor e inestabilidad general)
+* Problemas de "audio drift" en APUs Ryzen (chips de la serie G) 
+   * Un DAC USB es la única solución que no involucre cambiar tu CPU
+* Es difícil configurar la suspensión (o imposible en algunos sistemas)
+* Falta de administración de energía de la CPU
+* No todos los puertos USB funcionan en algunas placas madre
+   * Esto se debe a que no están asignados en ACPI, debes agregarlos manualmente en tu DSDT
+* Actualizaciones atrasadas
+* **Threadripper de 3ra generación no es soportado en bare-metal**
+  * La solución por ahora la única es usar un KVM 
 
 CPUs de AMD:
 * AMD Ryzen 1000
@@ -35,11 +35,11 @@ CPUs de AMD:
 * AMD Ryzen 3000
 * AMD Athlon
 * AMD ThreadRipper
-* AMD FX Series
+* Serie FX AMD
 
-With Intel, the thanks to most of the CPUs being quite similar they have support when the CPU is spoofed to a supported model. The only downside is that the iGPU rarely work on Atom/Pentium/Celeron these models meaning a cheap iGPU Hackintosh es imposible con estos CPUs. Regarding X99/LGA 2011-V3 CPUs, there's the issue that these CPUs were never shipped in a real Mac so quite a few issues are present when running macOS on these systems. Evita estos si es posible
+Con Intel, gracias a que la mayoría de las CPU son bastante similares, tienen soporte cuando la CPU se falsifica a un modelo compatible. El único inconveniente es que la iGPU rara vez funciona en Atom/Pentium/Celeron, lo que significa que una hackintosh barata con iGPU es imposible con estas CPU. Con respecto a las CPUs X99/LGA 2011-V3, existe el problema de que estas CPU nunca se utilizaron en una Mac real, por lo que existen bastantes problemas al ejecutar macOS en estos sistemas. Evita estos si es posible
 
-**Nota para Usarios Dual Socket**: Ten en cuenta que el kernel de macOS solamente soprta 64 hilos. So for baller setups please be aware. And for dual socket users, tienes que usar [AppleMCEReporterDisabler](https://github.com/acidanthera/bugtracker/files/3703498/AppleMCEReporterDisabler.kext.zip) en macOS Catalina
+**Nota para Usarios Dual Socket**: Ten en cuenta que el kernel de macOS solamente soprta 64 hilos. Ten esto en cuenta si tienes un setup con una CPU así. En el caso de que seas un usuario dual socket, tienes que usar [AppleMCEReporterDisabler](https://github.com/acidanthera/bugtracker/files/3703498/AppleMCEReporterDisabler.kext.zip) en macOS Catalina y superior. 
 
 * Intel Atoms
 * Intel Celerons
@@ -50,19 +50,19 @@ With Intel, the thanks to most of the CPUs being quite similar they have support
 
 ::: tip Recomendaciones
 
-So our overall recommendation for CPUs:
+Nuestras recomendaciones generales para CPUs son las siguientes:
 
-* Semi-modern consumer Intel CPUs
-  * Ivy Bridge through Comet Lake are properly supported in macOS
+* CPUs Semi-modernas Intel para consumidores
+  * El soporte de CPUs en macOS va desde Ivy Bridge hasta Comet Lake.
 :::
 
 ## CPUs Incompatibles
 
-So with outright unsupported CPUs, you're split into 2 camps: Either too old to run or too new that patches aren't supported
+Las CPU totalmente no compatibles se dividen en 2 campos: Que sea demasiado vieja para ejecutar macOS o demasiado nuevo, donde los parches no son compatibles
 
 **Demasiado antiguos**:
 
-This mainly consists of CPUs that are missing the SSE4.2 instruction set required for Mojave and newer, you can get around this by replacing the telemetry plugin but not ideal. See [trashOS repo](https://github.com/khronokernel/trashOS) for more info
+Esto consiste principalmente en CPUs a las que les falta el conjunto de instrucciones SSE4.2 requerido para Mojave y versiones posteriores; puede solucionarlo reemplazando el complemento de telemetría, pero no es lo ideal. Consulta [la repo trashOS](https://github.com/khronokernel/trashOS) para obtener más información.
 
 * Wolfdale (serie Core2 Duo de Intel)
    * E7xxx
@@ -71,14 +71,14 @@ This mainly consists of CPUs that are missing the SSE4.2 instruction set require
    * E8xxx
    * E9xxx
 
-Then there's the CPUs that are missing the SSE4.1 and older instruction sets, with these support is stuck an OS X 10.11 El Capitan
+Luego están las CPU a las que les falta el SSE4.1 y los conjuntos de instrucciones anteriores, con este tienes soporte hasta OS X 10.11 El Capitan
 
 
 **Demasiado nuevos**
 
-Well with this, the only current solution is to run it in a KVM, this is due to the current kernel patches not supporting 19h
+Bueno, con esto, la única solución actualmente es ejecutarlo en un KVM, esto se debe a que los parches actuales del kernel no admiten 19h
 
-* Threadripper de la 3a Generación
+* Threadripper de 3a Generación
    * 3960X
    * 3970X
    * 3990X(el kernel de macOS kernel no es compatible con más de 64 hilos)
