@@ -92,7 +92,7 @@ module.exports = {
             */
         ],
         sidebar: [{
-            title: 'Introducción',
+            title: 'Introduction',
             collapsable: false,
             sidebarDepth: 1,
             children: [
@@ -101,21 +101,21 @@ module.exports = {
 
         },
         {
-            title: '¿Qué evitar?',
+            title: 'What to avoid',
             collapsable: false,
             sidebarDepth: 2,
             children: [
                 'CPU',
                 'GPU',
 				'Motherboard',
-				'Almacenamiento',
+				'Storage',
 				'RAM',
-				'Refrigeración',
+				'Cooler',
 				'Networking',
 				'Wireless',
-				'Fuente de Alimentación',
+				'PSU',
 				'Case',
-				'Pasta Térmica',
+				'ThermalPaste',
             ]
         },
     ],
