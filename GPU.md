@@ -35,6 +35,12 @@ Nuestras recomendaciones para GPUs:
 
 **GPUs que no son compatibles con NINGUNA VERSIÓN DE macOS**
 
+Ampere
+
+ * RTX 3090
+ * RTX 3080
+ * RTX 3070
+
 Turing
 
 * Titan RTX
