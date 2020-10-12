@@ -1,6 +1,6 @@
 # Motherboards
 
-::: Advertencia
+::: warning
 
 ~~Actualmente el único motherboard que no tiene **nada de compatibilidad** son las placas madre B550 de AMD, requieren una KVM para funcionar.~~
 
